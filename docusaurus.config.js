@@ -71,7 +71,7 @@ const config = {
                         type: 'doc',
                         docId: 'intro',
                         position: 'left',
-                        label: 'Tutorial',
+                        label: 'Project',
                     },
                     { to: '/blog', label: 'Blog', position: 'left' },
                     {
@@ -85,7 +85,7 @@ const config = {
                 ],
             },
             footer: {
-                style: 'dark',
+                style: 'light',
                 links: [
                     {
                         title: 'Sitemap',
