@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Tus1688',
-    tagline: "Tus1688's Portofolio",
+    tagline: '“To infinity and beyond.” – Buzz Lightyear',
     url: 'https://tus1688.github.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -72,7 +72,7 @@ const config = {
                         type: 'doc',
                         docId: 'intro',
                         position: 'left',
-                        label: 'Project',
+                        label: 'My works',
                     },
                     { to: '/blog', label: 'Blog', position: 'left' },
                     {
@@ -87,22 +87,22 @@ const config = {
             },
             footer: {
                 style: 'light',
-                links: [
-                    {
-                        title: 'Sitemap',
-                        items: [
-                            {
-                                label: 'Tutorial',
-                                to: '/docs/intro',
-                            },
-                            {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} Tus1688, Built with Docusaurus.`,
+                // links: [
+                //     {
+                //         title: 'Sitemap',
+                //         items: [
+                //             {
+                //                 label: 'Tutorial',
+                //                 to: '/docs/intro',
+                //             },
+                //             {
+                //                 label: 'Blog',
+                //                 to: '/blog',
+                //             },
+                //         ],
+                //     },
+                // ],
+                copyright: `Copyright © ${new Date().getFullYear()} Tus1688`,
             },
             prism: {
                 theme: lightCodeTheme,
