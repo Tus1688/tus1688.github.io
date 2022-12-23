@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktus_1688_github_io=self.webpackChunktus_1688_github_io||[]).push([[121],{8070:e=>{e.exports=JSON.parse('[{"label":"react","permalink":"/docs/tags/react","count":1},{"label":"nginx","permalink":"/docs/tags/nginx","count":1},{"label":"web development","permalink":"/docs/tags/web-development","count":1}]')}}]);
