@@ -108,6 +108,11 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
+            announcementBar: {
+                id: 'announcementBar-1', // Increment on change
+                content:
+                    '⭐️ If you like my works & blog, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tus1688/tus1688.github.io">GitHub</a>! ⭐️',
+            },
         }),
 };
 module.exports = config;
