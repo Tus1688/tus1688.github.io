@@ -19,6 +19,13 @@ My apologies for not being able to share the code, the attack surface will be bi
 4.  I don't have self confidence to say that this application is 100% secure (**I am not a security expert**).
 :::
 
+### Analysis Phase
+At the beginning of the project, We began with interviewing the client, and then
+we did a lot of research about the system that we are going to build.
+Time is the most important factor in this project, so we must be able to deliver
+the system as soon as possible. We also need to make sure that the system is
+secure and easy to use.
+
 <details><summary>Features</summary>
 <p>
 
@@ -51,8 +58,9 @@ My apologies for not being able to share the code, the attack surface will be bi
         -   Delete Batch
         -   Pagination (frontend and backend)
     -   Production
-        -   Create Production
-        -   Delete Production
+        -   Create Production Draft
+        -   Approve Production Draft
+        -   Delete Production Draft
         -   Pagination (frontend and backend)
     -   Stock
         -   Pagination (frontend only)
@@ -211,3 +219,17 @@ I utilized this project as a learning opportunity. I learned a lot of things fro
 -   I learned that stateless authentication is the best way to scale but it is very hard to implement. So,
     I still use stateful authentication to validate refresh token
 -   I learned how to debug selinux policy, and successfully confine docker daemon and containers in selinux.
+
+### User testing
+
+At the near end of the development phase, I conduct a penetration testing and performance testing on our web application.
+I found some minor bugs like I able to produce items with negative quantity, I able to create sales invoice with negative quantity,
+But I think it is not a big deal, because it took 5 minutes to fix those issue. The important thing for me is that
+Most of common web exploit will be automatically evaluated / filtered by backend.
+I also found that our web application is very fast, and it can handle a lot of requests at the same time. With 10 bcrypt rounds,
+our web application can handle 200 concurrent login requests for 5000 times without any problem even though the worse case scenario
+takes 1.5 seconds to respond to each request, I think it is very good performance considering that we are using limited resources (2vcpu, 2gb ram).
+For a real world scenario, I think we can handle more than 500 concurrent requests for any api endpoint except login endpoint,
+withouth any problem. But, because we used reverse proxy, the main business logic is running in a seperate container, which is
+a good thing, because high traffic on login endpoint will not affect the performance of our main business logic.
+
