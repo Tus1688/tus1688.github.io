@@ -203,6 +203,20 @@ I also did some research about the tech stack that we are going to use, and perf
 security testing on our web application. So far, I have pleased my "client" with the result of this project
 which is a fully functional web application that is ready to be used in a real world scenario.
 
+### User testing
+
+At the near end of the development phase, I conduct a penetration testing and performance testing on our web application.
+I found some minor bugs like I able to produce items with negative quantity, I able to create sales invoice with negative quantity,
+But I think it is not a big deal, because it took 5 minutes to fix those issue. The important thing for me is that
+Most of common web exploit will be automatically evaluated / filtered by backend.
+I also found that our web application is very fast, and it can handle a lot of requests at the same time. With 10 bcrypt rounds,
+our web application can handle 200 concurrent login requests for 5000 times without any problem even though the worse case scenario
+takes 1.5 seconds to respond to each request, I think it is very good performance considering that we are using limited resources (2vcpu, 2gb ram).
+For a real world scenario, I think we can handle more than 500 concurrent requests for any api endpoint except login endpoint,
+withouth any problem. But, because we used reverse proxy, the main business logic is running in a seperate container, which is
+a good thing, because high traffic on login endpoint will not affect the performance of our main business logic.
+
+
 ### What did I learn from this project?
 
 I utilized this project as a learning opportunity. I learned a lot of things from this project.
@@ -219,17 +233,3 @@ I utilized this project as a learning opportunity. I learned a lot of things fro
 -   I learned that stateless authentication is the best way to scale but it is very hard to implement. So,
     I still use stateful authentication to validate refresh token
 -   I learned how to debug selinux policy, and successfully confine docker daemon and containers in selinux.
-
-### User testing
-
-At the near end of the development phase, I conduct a penetration testing and performance testing on our web application.
-I found some minor bugs like I able to produce items with negative quantity, I able to create sales invoice with negative quantity,
-But I think it is not a big deal, because it took 5 minutes to fix those issue. The important thing for me is that
-Most of common web exploit will be automatically evaluated / filtered by backend.
-I also found that our web application is very fast, and it can handle a lot of requests at the same time. With 10 bcrypt rounds,
-our web application can handle 200 concurrent login requests for 5000 times without any problem even though the worse case scenario
-takes 1.5 seconds to respond to each request, I think it is very good performance considering that we are using limited resources (2vcpu, 2gb ram).
-For a real world scenario, I think we can handle more than 500 concurrent requests for any api endpoint except login endpoint,
-withouth any problem. But, because we used reverse proxy, the main business logic is running in a seperate container, which is
-a good thing, because high traffic on login endpoint will not affect the performance of our main business logic.
-
