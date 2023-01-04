@@ -187,9 +187,18 @@ because Nginx configuration is very hard to understand, and recently Traefik is 
 We want to use Red Hat Enterprise Linux as our server OS, but unfortunately, it is not free, so we decided to use Rocky Linux,
 which is a free and open source version of Red Hat Enterprise Linux.
 
+<details><summary>Architecture Diagram</summary>
+
+![Architecture_Diagram](./architecture-design.png)
+Color of arrow represent the network group that the container is in.
+So, the go-api can't access the auth-db & auth-redis. The blue colored box is the
+container that exposed to the internet which is the traefik container.
+
+</details>
+
 ### Stage Of Development (without analysis phase)
 
--   API Design
+-   API Design + interface design
 -   Database Design
 -   Backend Development
 -   Frontend Development
