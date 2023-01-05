@@ -85,7 +85,6 @@ secure and easy to use.
         -   Pagination (frontend only)
     -   UI
         -   Change Theme
-            blabla
 
 </p>
 </details>
@@ -138,19 +137,6 @@ secure and easy to use.
 </p>
 </details>
 
-<details><summary>Some photos</summary>
-
-![Dashboard Light](./dashboard-light.png)
-
-#### I love dark mode so much, so I made a dark mode for this application.
-
-![Dashboard Dark](./dashboard-dark.png)
-![Create Sales Invoice](./create-sales-invoice.png)
-![Approve Sales Invoice](./approve-sales-invoice.png)
-![User List](./user-list.png)
-
-</details>
-
 ### Tech Stack
 
 -   React (Frontend)
@@ -198,12 +184,24 @@ container that exposed to the internet which is the traefik container.
 
 ### Stage Of Development (without analysis phase)
 
--   API Design + interface design
+-   API Design + interface design (for interface design we use Figma)
 -   Database Design
 -   Backend Development
 -   Frontend Development
 -   Deployment
 -   Penetration Testing & Performance Testing
+
+<details><summary>Main Focus</summary>
+
+-   web application that is ready to be used in a real world scenario.
+-   web application that is secure, fast, and robust.
+-   web application that is easy to maintain.
+-   web application that is easy to deploy.
+-   web application that is easy to scale.
+-   web application that is easy to use.
+-   web application that give a good economic value to my client.
+
+</details>
 
 ### What did I do in this project?
 
@@ -225,6 +223,38 @@ For a real world scenario, I think we can handle more than 500 concurrent reques
 withouth any problem. But, because we used reverse proxy, the main business logic is running in a seperate container, which is
 a good thing, because high traffic on login endpoint will not affect the performance of our main business logic.
 
+<details><summary>User feedback</summary>
+
+The user that tested this web application is the admin of the business that I am working for.
+While we are testing this web application, she said that she is very happy with the result of this project.
+Even though there are some minor confusing things, every test case that she tried is working as expected.
+The feedback that she gave me will be very useful for me to improve the user experience for the upcoming
+projects that I am going to work on.
+
+</details>
+
+<details><summary>Some photos</summary>
+
+![Dashboard Light](./dashboard-light.png)
+
+#### I love dark mode so much, so I made a dark mode for this application.
+
+![Dashboard Dark](./dashboard-dark.png)
+
+#### Sales Invoice Creation
+
+![Create Sales Invoice](./create-sales-invoice.png)
+
+#### Sales Invoice Approval
+
+![Approve Sales Invoice](./approve-sales-invoice.png)
+
+#### User Management, where you can create, edit, and set user as active/inactive.
+
+![User List](./user-list.png)
+There are many more page and features that I didn't mention here, as this is just a glimpse of the application.
+
+</details>
 
 ### What did I learn from this project?
 
@@ -240,5 +270,5 @@ I utilized this project as a learning opportunity. I learned a lot of things fro
 -   I learned that ORM is not always the best choice, because it is very hard to debug when something goes wrong and 
     speaking about performance, I found that using raw SQL is faster than using ORM.
 -   I learned that stateless authentication is the best way to scale but it is very hard to implement. So,
-    I still use stateful authentication to validate refresh token
+    I still use stateful authentication to validate a refresh token, but all secured endpoint use stateless authentication (JWT).
 -   I learned how to debug selinux policy, and successfully confine docker daemon and containers in selinux.
