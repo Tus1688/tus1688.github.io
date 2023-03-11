@@ -1,0 +1,8 @@
+{
+  "name": "Docusaurus",
+  "image": "node:18",
+  "postCreateCommand": "npm install",
+  "appPort": 3000,
+  "forwardPorts": [3000],
+  "remoteUser": "node"
+}
