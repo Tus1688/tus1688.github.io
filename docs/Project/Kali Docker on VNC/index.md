@@ -5,7 +5,7 @@ sidebar_position: 2
 # Kali Docker on VNC
 Docker is a popular tool for containerization that allows you to run applications in an isolated environment.
 We can't deny how beautiful and practical it is to easily build and run kali linux. But as you working on
-web pentesting, suddenly everything become dreadful. Hence, having GUI to run Burp Suite / OWASP ZAP is compulsary
+web pentesting, suddenly everything become dreadful. Hence, having GUI to run Burp Suite / OWASP ZAP is compulsory
 in pentesting.
 
 ![kali docker vnc](./kali-docker-vnc.png)
