@@ -26,7 +26,8 @@ thinking and wondering, we decided to just start designing the database and the
 infra. This attitude is very important because we can't just think and think. Time
 is money, and I am thankful that I really accostumed to this attitude.
 
-<details><summary>Features</summary>
+<details>
+    <summary>Features</summary>
 <p>
 
 -   Customer Authentication
@@ -54,7 +55,8 @@ is money, and I am thankful that I really accostumed to this attitude.
 </p>
 </details>
 
-<details><summary>Technical Features</summary>
+<details>
+    <summary>Technical Features</summary>
 <p>
 
 -   Our Infrastructure

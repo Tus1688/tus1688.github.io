@@ -26,7 +26,8 @@ Time is the most important factor in this project, so we must be able to deliver
 the system as soon as possible. We also need to make sure that the system is
 secure and easy to use.
 
-<details><summary>Features</summary>
+<details>
+    <summary>Features</summary>
 <p>
 
 -   Dashboard that consist of
@@ -89,7 +90,8 @@ secure and easy to use.
 </p>
 </details>
 
-<details><summary>Technical Features</summary>
+<details>
+    <summary>Technical Features</summary>
 <p>
 
 -   Authentication
@@ -173,7 +175,8 @@ because Nginx configuration is very hard to understand, and recently Traefik is 
 We want to use Red Hat Enterprise Linux as our server OS, but unfortunately, it is not free, so we decided to use Rocky Linux,
 which is a free and open source version of Red Hat Enterprise Linux.
 
-<details><summary>Architecture Diagram</summary>
+<details>
+    <summary>Architecture Diagram</summary>
 
 ![Architecture_Diagram](./architecture-design.png)
 Color of arrow represent the network group that the container is in.
@@ -191,7 +194,8 @@ container that exposed to the internet which is the traefik container.
 -   Deployment
 -   Penetration Testing & Performance Testing
 
-<details><summary>Main Focus</summary>
+<details>
+    <summary>Main Focus</summary>
 
 -   web application that is ready to be used in a real world scenario.
 -   web application that is secure, fast, and robust.
@@ -223,7 +227,8 @@ For a real world scenario, I think we can handle more than 500 concurrent reques
 withouth any problem. But, because we used reverse proxy, the main business logic is running in a seperate container, which is
 a good thing, because high traffic on login endpoint will not affect the performance of our main business logic.
 
-<details><summary>User feedback</summary>
+<details>
+    <summary>User feedback</summary>
 
 The user that tested this web application is the admin of the business that I am working for.
 While we are testing this web application, she said that she is very happy with the result of this project.
@@ -233,7 +238,8 @@ projects that I am going to work on.
 
 </details>
 
-<details><summary>Some photos</summary>
+<details>
+    <summary>Some photos</summary>
 
 ![Dashboard Light](./dashboard-light.png)
 
