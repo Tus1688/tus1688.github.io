@@ -12,10 +12,10 @@ const FeatureList: FeatureItem[] = [
         title: 'Pentester',
         description: (
             <>
-                Originally as developer, but I always had a passion for
-                protecting systems. Sometimes I do some pentesting for fun, but
-                I also do it professionally. I&apos;m always looking for new
-                challenges.
+                Initially starting as a developer, but I have always had a
+                passion for protecting systems. Sometimes, I engage in
+                pentesting for fun through Capture the Flag (CTF) events,
+                but I also do it professionally.
             </>
         ),
     },
@@ -23,10 +23,34 @@ const FeatureList: FeatureItem[] = [
         title: 'Developer',
         description: (
             <>
-                I love to develop new things. Python and Golang are my favorite
-                languages to get things done. For web development I choose React
-                and TypeScript as they give me the best developer experience
-                while still being fast.
+                I enjoy developing new projects. Python and Go are my preferred
+                languages for accomplishing tasks. For web development,
+                I choose React with TypeScript, as they provide the best
+                developer experience while remaining fast.
+            </>
+        ),
+    },
+    {
+        title: 'Data Scientist',
+        description: (
+            <>
+
+            </>
+        ),
+    },
+    {
+        title: 'RLHF SFT Engineer',
+        description: (
+            <>
+
+            </>
+        ),
+    },
+    {
+        title: 'Researcher',
+        description: (
+            <>
+
             </>
         ),
     },
@@ -34,10 +58,7 @@ const FeatureList: FeatureItem[] = [
         title: 'Learner',
         description: (
             <>
-                I&apos;m constantly learning new things. Most of the time, I
-                learn new things by doing. Personally, CTFs are a great way to
-                learn, same goes for creating my own tools / working on
-                projects.
+
             </>
         ),
     },

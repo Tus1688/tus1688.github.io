@@ -5,7 +5,7 @@ authors: Tus1688
 tags: [general]
 ---
 
-## Hi everyone!
+## Hi everyone
 
 Welcome to my blog, TLDR; According to Dr. Chapman, there are five love languages: Words of Affirmation, Acts of Service, Receiving Gifts, Quality Time, and Physical Touch
 and... **Python** is my love language.
@@ -13,6 +13,8 @@ and... **Python** is my love language.
 :::caution
 This blog is still under construction, so please bear with me.
 :::
+
+<!-- truncate -->
 
 ## How I got into coding?
 

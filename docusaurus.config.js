@@ -8,7 +8,7 @@ const darkCodeTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Tus1688',
-    tagline: '“To infinity and beyond.” – Buzz Lightyear',
+    tagline: 'Data Scientist, Researcher, and RLHF SFT Engineer',
     url: 'https://tus1688.github.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
