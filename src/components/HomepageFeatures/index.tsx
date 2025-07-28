@@ -9,7 +9,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
     {
-        title: 'Pentester',
+        title: 'Security Focused',
         description: (
             <>
                 Initially starting as a developer, but I have always had a
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
         title: 'Developer',
         description: (
             <>
-                I enjoy developing new projects. Python and Go are my preferred
+                Python and Go are my preferred
                 languages for accomplishing tasks. For web development,
                 I choose React with TypeScript, as they provide the best
                 developer experience while remaining fast.
@@ -34,7 +34,9 @@ const FeatureList: FeatureItem[] = [
         title: 'Data Scientist',
         description: (
             <>
-
+                I enjoy working with data and have proven my skills in data science
+                through success in international competitions. My primary
+                focus is on forecasting time series and tabular data.
             </>
         ),
     },
@@ -42,15 +44,21 @@ const FeatureList: FeatureItem[] = [
         title: 'RLHF SFT Engineer',
         description: (
             <>
-
+                I am currently working as a contractor at three AI training labs,
+                where I support coding and language projects as an AI trainer.
+                Additionally, I am trusted to provide feedback to fellow
+                contributors and help set quality standards.
             </>
         ),
     },
     {
-        title: 'Researcher',
+        title: 'AI Engineer',
         description: (
             <>
-
+                My work with top AI training labs has provided me with extensive
+                exposure to advanced AI techniques and prompt engineering practices.
+                I specialize in creating effective prompts for various AI models
+                and optimizing agentic AI workflows.
             </>
         ),
     },
@@ -58,7 +66,10 @@ const FeatureList: FeatureItem[] = [
         title: 'Learner',
         description: (
             <>
-
+                The tech world evolves rapidly following the AI boom, and 
+                I believe continuous learning is essential to stay relevant. 
+                In addition, I actively explore new technologies, frameworks, 
+                and methodologies to adapt and deliver results quickly and efficiently.
             </>
         ),
     },
@@ -67,7 +78,7 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, description }: FeatureItem) {
     return (
         <div className={clsx('col col--4')}>
-            <div className='text--center padding-horiz--md'>
+            <div className='text--center padding-horiz--md padding-vert--md'>
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
