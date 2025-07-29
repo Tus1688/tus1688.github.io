@@ -9,7 +9,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
     {
-        title: 'Security Focused',
+        title: '🔒 Security Focused',
         description: (
             <>
                 Initially starting as a developer, but I have always had a
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
         ),
     },
     {
-        title: 'Developer',
+        title: '💻 Developer',
         description: (
             <>
                 Python and Go are my preferred
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
         ),
     },
     {
-        title: 'Data Scientist',
+        title: '📊 Data Scientist',
         description: (
             <>
                 I enjoy working with data and have proven my skills in data science
@@ -41,7 +41,7 @@ const FeatureList: FeatureItem[] = [
         ),
     },
     {
-        title: 'RLHF SFT Engineer',
+        title: '🎯 RLHF SFT Engineer',
         description: (
             <>
                 I am currently working as a contractor at three AI training labs,
@@ -52,7 +52,7 @@ const FeatureList: FeatureItem[] = [
         ),
     },
     {
-        title: 'AI Engineer',
+        title: '🤖 AI Engineer',
         description: (
             <>
                 My work with top AI training labs has provided me with extensive
