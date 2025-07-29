@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 type FeatureItem = {
     title: string;
     description: JSX.Element;
+    className?: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -61,22 +62,11 @@ const FeatureList: FeatureItem[] = [
             </>
         ),
     },
-    // {
-    //     title: 'Learner',
-    //     description: (
-    //         <>
-    //             The tech world evolves rapidly following the AI boom, and 
-    //             I believe continuous learning is essential to stay relevant. 
-    //             In addition, I actively explore new technologies, frameworks, 
-    //             and methodologies to adapt and deliver results quickly and efficiently.
-    //         </>
-    //     ),
-    // },
 ];
 
-function Feature({ title, description }: FeatureItem) {
+function Feature({ title, description, className }: FeatureItem) {
     return (
-        <div className={clsx('col col--4')}>
+        <div className={clsx('col', className)}>
             <div className='text--center padding-horiz--md padding-vert--md'>
                 <h3>{title}</h3>
                 <p>{description}</p>
@@ -86,12 +76,20 @@ function Feature({ title, description }: FeatureItem) {
 }
 
 export default function HomepageFeatures(): JSX.Element {
+    const firstRow = FeatureList.slice(0, 3);
+    const secondRow = FeatureList.slice(3);
+
     return (
         <section className={styles.features}>
-            <div className='container'>
+            <div className='container text--center'>
                 <div className='row'>
-                    {FeatureList.map((props, idx) => (
+                    {firstRow.map((props, idx) => (
                         <Feature key={idx} {...props} />
+                    ))}
+                </div>
+                <div className="row">
+                    {secondRow.map((props, idx) => (
+                        <Feature key={idx} {...props} className={clsx('col--4', idx === 0 && 'col--offset-2')} />
                     ))}
                 </div>
             </div>

@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
     return (
         <Layout
             title={`${siteConfig.title}'s portfolio`}
-            description='Homepage of the portfolio of a pentester and developer.'
+            description={`Homepage of the portfolio of ${siteConfig.title}`}
         >
             <HomepageHeader />
             <main>
