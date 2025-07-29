@@ -62,7 +62,14 @@ const config: Config = {
                 defaultMode: 'dark',
                 disableSwitch: false,
             },
+            docs: {
+                sidebar: {
+                    hideable: true,
+                    autoCollapseCategories: true,
+                },
+            },
             navbar: {
+                // hideOnScroll: true,
                 title: 'Tus1688',
                 logo: {
                     alt: 'Tus1688 Logo',
@@ -76,6 +83,22 @@ const config: Config = {
                         label: 'My works',
                     },
                     { to: '/blog', label: 'Blog', position: 'left' },
+                    // {
+                    //     href: 'https://www.kaggle.com/benedictus1',
+                    //     rel: 'noopener noreferrer',
+                    //     target: '_blank',
+                    //     position: 'right',
+                    //     className: 'header-kaggle-link',
+                    //     'aria-label': 'Kaggle profile',
+                    // },
+                    {
+                        href: 'https://www.linkedin.com/in/benedictus-mario-24965a222/',
+                        rel: 'noopener noreferrer',
+                        target: '_blank',
+                        position: 'right',
+                        className: 'header-linkedin-link',
+                        'aria-label': 'LinkedIn profile',
+                    },
                     {
                         href: 'https://github.com/tus1688',
                         rel: 'noopener noreferrer',
@@ -86,25 +109,25 @@ const config: Config = {
                     },
                 ],
             },
-            footer: {
-                style: 'light',
-                // links: [
-                //     {
-                //         title: 'Sitemap',
-                //         items: [
-                //             {
-                //                 label: 'Tutorial',
-                //                 to: '/docs/intro',
-                //             },
-                //             {
-                //                 label: 'Blog',
-                //                 to: '/blog',
-                //             },
-                //         ],
-                //     },
-                // ],
-                copyright: `Copyright © ${new Date().getFullYear()} Tus1688`,
-            },
+            // footer: {
+            //     style: 'light',
+            //     // links: [
+            //     //     {
+            //     //         title: 'Sitemap',
+            //     //         items: [
+            //     //             {
+            //     //                 label: 'Tutorial',
+            //     //                 to: '/docs/intro',
+            //     //             },
+            //     //             {
+            //     //                 label: 'Blog',
+            //     //                 to: '/blog',
+            //     //             },
+            //     //         ],
+            //     //     },
+            //     // ],
+            //     copyright: `Copyright © ${new Date().getFullYear()} Tus1688`,
+            // },
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
