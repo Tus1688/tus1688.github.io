@@ -3,9 +3,24 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "@docusaurus/module-type-aliases",
+      "@docusaurus/theme-classic"
+    ]
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "coverage/**",
+    "**/lib/**/*",
+    "website/**",
+    "**/__mocks__/**/*",
+    "**/__fixtures__/**/*",
+    "examples/**",
+    "packages/create-docusaurus/templates/**"
   ]
 }

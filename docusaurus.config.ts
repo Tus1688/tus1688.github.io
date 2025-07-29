@@ -1,12 +1,14 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
 
-const {themes} = require('prism-react-renderer');
+// const { themes } = require('prism-react-renderer');
+import {themes } from 'prism-react-renderer';
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
     title: 'Tus1688',
     tagline: 'Data Scientist, Researcher, and RLHF SFT Engineer',
     url: 'https://tus1688.github.io',
@@ -32,8 +34,7 @@ const config = {
     presets: [
         [
             'classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
-            ({
+            {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
@@ -51,13 +52,12 @@ const config = {
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
-            }),
+            } satisfies Preset.Options,
         ],
     ],
 
     themeConfig:
-        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        ({
+        {
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: false,
@@ -114,6 +114,8 @@ const config = {
             //     content:
             //         '⭐️ If you like my works & blog, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tus1688/tus1688.github.io">GitHub</a>! ⭐️',
             // },
-        }),
+        } satisfies Preset.ThemeConfig,
 };
-module.exports = config;
+
+
+export default config;

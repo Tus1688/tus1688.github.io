@@ -1,4 +1,3 @@
-import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
@@ -62,17 +61,17 @@ const FeatureList: FeatureItem[] = [
             </>
         ),
     },
-    {
-        title: 'Learner',
-        description: (
-            <>
-                The tech world evolves rapidly following the AI boom, and 
-                I believe continuous learning is essential to stay relevant. 
-                In addition, I actively explore new technologies, frameworks, 
-                and methodologies to adapt and deliver results quickly and efficiently.
-            </>
-        ),
-    },
+    // {
+    //     title: 'Learner',
+    //     description: (
+    //         <>
+    //             The tech world evolves rapidly following the AI boom, and 
+    //             I believe continuous learning is essential to stay relevant. 
+    //             In addition, I actively explore new technologies, frameworks, 
+    //             and methodologies to adapt and deliver results quickly and efficiently.
+    //         </>
+    //     ),
+    // },
 ];
 
 function Feature({ title, description }: FeatureItem) {
